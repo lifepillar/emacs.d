@@ -22,6 +22,7 @@
  '(save-place t nil (saveplace))
  '(save-place-file "~/.emacs.d/tmp/saved-places")
  '(scroll-bar-mode nil)
+ '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(xterm-mouse-mode t))

@@ -17,6 +17,7 @@
  '(save-place-file (concat lifepillar-tmp-dir "saved-places"))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
+ '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(xterm-mouse-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

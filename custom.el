@@ -14,7 +14,7 @@
  '(menu-bar-mode nil)
  '(message-log-max 65536)
  '(save-place t nil (saveplace))
- '(save-place-file (concat lifepillar-tmp-dir "saved-places")
+ '(save-place-file (concat lifepillar-tmp-dir "saved-places"))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(xterm-mouse-mode t))

@@ -23,6 +23,7 @@
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(message-log-max 65536)
+ '(recentf-mode t)
  '(save-place t nil (saveplace))
  '(save-place-file "~/.emacs.d/tmp/saved-places")
  '(scroll-bar-mode nil)

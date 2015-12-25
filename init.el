@@ -3,15 +3,15 @@
 (defvar lifepillar-emacs-dir (file-name-directory load-file-name)
   "Emacs configuration directory (typically, but not necessarily, '~/.emacs.d/'.")
 
-(defvar lifepillar-tmp-dir (expand-file-name "tmp/" lifepillar-emacs-dir)
-  "Directory for collecting temporary and auto-generated files.")
 
 ;; Customization file
 (setq custom-file (concat lifepillar-emacs-dir "custom.el"))
 (load custom-file)
 
+
 ;; Set up Unicode
 (prefer-coding-system 'utf-8)
+
 
 ;; Set default font (GUI)
 (when (display-graphic-p)

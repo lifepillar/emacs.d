@@ -26,3 +26,7 @@ for example, if you run emacs with `-q -l`).")
 
   (setq-default line-spacing 2))
 
+
+;; Key bindings
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+

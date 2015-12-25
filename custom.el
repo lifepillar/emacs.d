@@ -9,6 +9,10 @@
  '(backup-directory-alist (quote (("." . "~/.emacs.d/backups"))))
  '(confirm-nonexistent-file-or-buffer nil)
  '(create-lockfiles nil)
+ '(custom-theme-directory "~/.emacs.d/themes")
+ '(custom-theme-load-path
+   (quote
+    ("~/.emacs.d/themes/solarized" custom-theme-directory t)))
  '(ido-create-new-buffer (quote always))
  '(ido-enable-flex-matching t)
  '(ido-everywhere t)

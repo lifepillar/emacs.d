@@ -16,6 +16,10 @@ for example, if you run emacs with `-q -l`).")
 (prefer-coding-system 'utf-8)
 
 
+;; Theme
+(load-theme 'solarized t)
+
+
 ;; Set default font (GUI)
 (when (display-graphic-p)
   (defconst lifepillar-default-font "Menlo")

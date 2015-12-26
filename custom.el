@@ -32,7 +32,7 @@
  '(message-log-max 65536)
  '(package-archives
    (quote
-    (("melpa" . "https://marmalade-repo.org/packages/")
+    (("melpa" . "https://melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(recentf-mode t)
  '(recentf-save-file "~/.emacs.d/tmp/recentf")

@@ -11,6 +11,9 @@
  '(confirm-nonexistent-file-or-buffer nil)
  '(create-lockfiles nil)
  '(custom-enabled-themes (quote (solarized)))
+ '(custom-safe-themes
+   (quote
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(custom-theme-directory "~/.emacs.d/themes")
  '(custom-theme-load-path
    (quote

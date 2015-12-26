@@ -1,14 +1,8 @@
 ;; Lifepillar's Emacs Initialization File
 
-(defconst lifepillar-emacs-dir
-          (file-name-directory load-file-name)
-          "Emacs configuration directory.
-This is typically, but not necessarily, '~/.emacs.d/': it may be different,
-for example, if you run emacs with `-q -l`).")
-
 
 ;; Customization file
-(setq custom-file (concat lifepillar-emacs-dir "custom.el"))
+(setq custom-file (concat user-emacs-directory "custom.el"))
 (load custom-file)
 
 

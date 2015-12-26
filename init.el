@@ -34,7 +34,7 @@ for example, if you run emacs with `-q -l`).")
     (propertize (format linum-format-fmt line) 'face 'linum)
     (propertize " " 'face 'linum)))
 
-(setq linum-format 'linum-format-func))
+(setq linum-format 'linum-format-func)
 
 
 ;; Set default font (GUI)

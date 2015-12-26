@@ -13,6 +13,7 @@
  '(custom-theme-load-path
    (quote
     ("~/.emacs.d/themes/solarized" custom-theme-directory t)))
+ '(global-linum-mode t)
  '(ido-create-new-buffer (quote always))
  '(ido-enable-flex-matching t)
  '(ido-everywhere t)

@@ -20,6 +20,23 @@ for example, if you run emacs with `-q -l`).")
 (load-theme 'solarized t)
 
 
+;; Line numbers
+;; See http://www.emacswiki.org/emacs/LineNumbers
+(add-hook 'linum-before-numbering-hook
+          (lambda ()
+            (setq-local linum-format-fmt
+                        (let ((w (length (number-to-string
+                                           (count-lines (point-min) (point-max))))))
+                          (concat " %" (number-to-string w) "d")))))
+
+(defun linum-format-func (line)
+  (concat
+    (propertize (format linum-format-fmt line) 'face 'linum)
+    (propertize " " 'face 'linum)))
+
+(setq linum-format 'linum-format-func))
+
+
 ;; Set default font (GUI)
 (when (display-graphic-p)
   (defconst lifepillar-default-font "Menlo")

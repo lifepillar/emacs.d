@@ -25,6 +25,7 @@
  '(menu-bar-mode nil)
  '(message-log-max 65536)
  '(recentf-mode t)
+ '(recentf-save-file "~/.emacs.d/tmp/recentf")
  '(save-place t nil (saveplace))
  '(save-place-file "~/.emacs.d/tmp/saved-places")
  '(scroll-bar-mode nil)

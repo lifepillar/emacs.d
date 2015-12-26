@@ -30,6 +30,10 @@
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(message-log-max 65536)
+ '(package-archives
+   (quote
+    (("melpa" . "https://marmalade-repo.org/packages/")
+     ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(recentf-mode t)
  '(recentf-save-file "~/.emacs.d/tmp/recentf")
  '(save-place t nil (saveplace))

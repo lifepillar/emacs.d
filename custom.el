@@ -10,6 +10,7 @@
  '(column-number-mode t)
  '(confirm-nonexistent-file-or-buffer nil)
  '(create-lockfiles nil)
+ '(custom-enabled-themes (quote (solarized)))
  '(custom-theme-directory "~/.emacs.d/themes")
  '(custom-theme-load-path
    (quote

@@ -16,10 +16,6 @@ for example, if you run emacs with `-q -l`).")
 (prefer-coding-system 'utf-8)
 
 
-;; Theme
-(load-theme 'solarized t)
-
-
 ;; Line numbers
 ;; See http://www.emacswiki.org/emacs/LineNumbers
 (add-hook 'linum-before-numbering-hook

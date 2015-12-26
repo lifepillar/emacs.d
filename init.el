@@ -37,17 +37,6 @@ for example, if you run emacs with `-q -l`).")
 (setq linum-format 'linum-format-func)
 
 
-;; Set default font (GUI)
-(when (display-graphic-p)
-  (defconst lifepillar-default-font "Menlo")
-
-  (if (find-font (font-spec :name lifepillar-default-font))
-    (set-frame-font (font-spec :family lifepillar-default-font :size 11 :weight 'normal) t t)
-    (message "Cannot find font \"%s\"!" lifepillar-default-font))
-
-  (setq-default line-spacing 2))
-
-
 ;; Key bindings
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 

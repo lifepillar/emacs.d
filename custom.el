@@ -22,6 +22,7 @@
  '(ido-save-directory-list-file "~/.emacs.d/tmp/ido.last")
  '(inhibit-default-init t)
  '(inhibit-startup-screen t)
+ '(line-spacing 2)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(message-log-max 65536)
@@ -41,4 +42,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "Menlo" :foundry "nil" :slant normal :weight normal :height 110 :width normal)))))

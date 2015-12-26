@@ -7,6 +7,7 @@
  '(auto-save-file-name-transforms (quote ((".*" "~/.emacs.d/auto-save/" t))))
  '(auto-save-list-file-prefix nil)
  '(backup-directory-alist (quote (("." . "~/.emacs.d/backups"))))
+ '(column-number-mode t)
  '(confirm-nonexistent-file-or-buffer nil)
  '(create-lockfiles nil)
  '(custom-theme-directory "~/.emacs.d/themes")

@@ -1,6 +1,11 @@
 ;; Lifepillar's Emacs Initialization File
 
-(add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
+;; Set up search paths (see C-h v load-path)
+(eval-and-compile
+  (mapc
+    #'(lambda (path)
+        (push (expand-file-name path user-emacs-directory) load-path))
+    '("lisp" "site-lisp")))
 
 ;; Temporarily reduce garbage collection during startup (speeds up startup a bit)
 (defconst lifepillar/initial-gc-cons-threshold gc-cons-threshold

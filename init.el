@@ -9,7 +9,7 @@
 
 ;; Temporarily reduce garbage collection during startup (speeds up startup a bit)
 (defconst lifepillar/initial-gc-cons-threshold gc-cons-threshold
-  "Initial value of `gc-cons-threshold' at start-up time.")
+          "Initial value of `gc-cons-threshold' at start-up time.")
 (setq gc-cons-threshold (* 128 1024 1024))
 (add-hook 'after-init-hook
           (lambda () (setq gc-cons-threshold lifepillar/initial-gc-cons-threshold)))
@@ -44,7 +44,6 @@
 
 ;; Key bindings
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-
 
 ;; Customization file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))

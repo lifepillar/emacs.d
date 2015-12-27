@@ -24,6 +24,8 @@
 ;; Set up Unicode
 (prefer-coding-system 'utf-8)
 
+;; Check/install/initialize packages
+(require 'lifepillar-packages)
 
 ;; Line numbers
 ;; See http://www.emacswiki.org/emacs/LineNumbers

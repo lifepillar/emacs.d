@@ -1,5 +1,6 @@
 ;; Lifepillar's Emacs Initialization File
 
+(add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
 ;; Customization file
 (setq custom-file (concat user-emacs-directory "custom.el"))

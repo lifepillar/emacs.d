@@ -2,10 +2,6 @@
 
 (add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
-;; Customization file
-(setq custom-file (concat user-emacs-directory "custom.el"))
-(load custom-file)
-
 ;; Temporarily reduce garbage collection during startup (speeds up startup a bit)
 (defconst lifepillar/initial-gc-cons-threshold gc-cons-threshold
   "Initial value of `gc-cons-threshold' at start-up time.")
@@ -45,4 +41,7 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 
+;; Customization file
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file)
 

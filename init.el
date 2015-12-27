@@ -6,6 +6,12 @@
 (setq custom-file (concat user-emacs-directory "custom.el"))
 (load custom-file)
 
+;; Temporarily reduce garbage collection during startup (speeds up startup a bit)
+(defconst lifepillar/initial-gc-cons-threshold gc-cons-threshold
+  "Initial value of `gc-cons-threshold' at start-up time.")
+(setq gc-cons-threshold (* 128 1024 1024))
+(add-hook 'after-init-hook
+          (lambda () (setq gc-cons-threshold lifepillar/initial-gc-cons-threshold)))
 
 ;; Measure initialization time
 (add-hook 'after-init-hook

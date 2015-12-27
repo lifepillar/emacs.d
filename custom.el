@@ -19,11 +19,6 @@
    (quote
     ("~/.emacs.d/themes/solarized" custom-theme-directory t)))
  '(global-linum-mode t)
- '(ido-create-new-buffer (quote always))
- '(ido-enable-flex-matching t)
- '(ido-everywhere t)
- '(ido-mode (quote both) nil (ido))
- '(ido-save-directory-list-file "~/.emacs.d/tmp/ido.last")
  '(inhibit-default-init t)
  '(inhibit-startup-screen t)
  '(line-spacing 2)

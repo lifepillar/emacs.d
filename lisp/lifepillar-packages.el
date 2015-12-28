@@ -12,6 +12,7 @@
   '(anti-zenburn-theme
     atom-dark-theme
     atom-one-dark-theme
+    color-theme-solarized
     zenburn-theme)
   "A list of packages that should be automatically installed if not present.")
 

@@ -1,11 +1,19 @@
 ;; Lifepillar's Emacs Initialization File
 
 ;; Set up search paths (see C-h v load-path)
-(eval-and-compile
-  (mapc
-    #'(lambda (path)
-        (push (expand-file-name path user-emacs-directory) load-path))
-    '("lisp" "site-lisp")))
+(push (expand-file-name "lisp" user-emacs-directory) load-path)
+
+;; See http://www.emacswiki.org/emacs/LoadPath
+(defun lifepillar/add-subdirs-to-load-path (dir)
+  (let ((default-directory dir))
+    (setq load-path
+          (append
+            (let ((load-path (copy-sequence load-path))) ;; Shadow
+              (normal-top-level-add-subdirs-to-load-path))
+            load-path))))
+
+(lifepillar/add-subdirs-to-load-path
+  (expand-file-name "site-lisp/" user-emacs-directory))
 
 ;; Temporarily reduce garbage collection during startup (speeds up startup a bit)
 (defconst lifepillar/initial-gc-cons-threshold gc-cons-threshold

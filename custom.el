@@ -10,10 +10,11 @@
  '(column-number-mode t)
  '(confirm-nonexistent-file-or-buffer nil)
  '(create-lockfiles nil)
- '(custom-enabled-themes (quote (zenburn)))
+ '(custom-enabled-themes (quote (solarized)))
  '(custom-safe-themes
    (quote
-    ("f024aea709fb96583cf4ced924139ac60ddca48d25c23a9d1cd657a2cf1e4728" default)))
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" "f024aea709fb96583cf4ced924139ac60ddca48d25c23a9d1cd657a2cf1e4728" default)))
+ '(fci-rule-color "#383838")
  '(global-linum-mode t)
  '(inhibit-default-init t)
  '(inhibit-startup-screen t)

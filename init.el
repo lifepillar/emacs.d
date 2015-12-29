@@ -57,6 +57,11 @@
 (add-hook 'sql-interactive-mode-hook
           (lambda ()
             (toggle-truncate-lines t)))
+;; To open multiple SQLi buffers, it is worth reading:
+;; http://stackoverflow.com/questions/14156805/no-multiple-sqli-buffers-in-emacs-24-2-1-anymore
+;; https://github.com/emacs-helm/helm/issues/696
+;; TLDR: Use M-x sql po C-u RET
+;; See also: C-h f sql-set-sqli-buffer
 
 ;; Customization file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))

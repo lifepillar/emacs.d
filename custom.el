@@ -28,6 +28,7 @@
  '(scroll-margin 2)
  '(show-paren-mode t)
  '(tool-bar-mode nil)
+ '(tooltip-use-echo-area t)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(xterm-mouse-mode t))
 (custom-set-faces

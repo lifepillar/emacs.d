@@ -14,6 +14,7 @@
     atom-dark-theme
     atom-one-dark-theme
     avy
+    diminish
     helm
     solarized-theme
     which-key
@@ -98,6 +99,10 @@ Missing packages are installed automatically."
 
 (require 'which-key)
 (which-key-mode)
+
+(require 'diminish)
+(diminish 'helm-mode)
+(diminish 'which-key-mode)
 
 (provide 'lifepillar-packages)
 

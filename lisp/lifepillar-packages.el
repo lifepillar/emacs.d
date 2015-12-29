@@ -16,6 +16,7 @@
     avy
     diminish
     helm
+    linum-relative
     solarized-theme
     which-key
     zenburn-theme)

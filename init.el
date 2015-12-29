@@ -51,9 +51,6 @@
 
 (setq linum-format 'linum-format-func)
 
-;; Editing
-;; Make C-n add newine at the end of file
-(setq next-line-add-newlines t)
 
 ;; Key bindings
 (global-set-key (kbd "C-x C-b") 'ibuffer)

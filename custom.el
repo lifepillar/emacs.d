@@ -17,6 +17,7 @@
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(message-log-max 65536)
+ '(next-line-add-newlines t)
  '(package-enable-at-startup nil)
  '(recentf-mode t)
  '(recentf-save-file "~/.emacs.d/tmp/recentf")

@@ -53,8 +53,6 @@
 (setq linum-format 'linum-format-func)
 
 
-;; Key bindings
-(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; Customization file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))

@@ -53,6 +53,10 @@
 (setq linum-format 'linum-format-func)
 
 
+;; SQL
+(add-hook 'sql-interactive-mode-hook
+          (lambda ()
+            (toggle-truncate-lines t)))
 
 ;; Customization file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))

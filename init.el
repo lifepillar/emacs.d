@@ -31,6 +31,7 @@
 
 ;; Set up Unicode
 (prefer-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
 
 ;; Check/install/initialize packages
 (require 'lifepillar-packages)

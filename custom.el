@@ -28,6 +28,7 @@
  '(scroll-conservatively 10000)
  '(scroll-margin 2)
  '(show-paren-mode t)
+ '(sql-postgres-options (quote ("-e" "-P" "pager=off")))
  '(tool-bar-mode nil)
  '(tooltip-use-echo-area t)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))

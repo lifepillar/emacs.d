@@ -11,6 +11,7 @@
  '(confirm-nonexistent-file-or-buffer nil)
  '(create-lockfiles nil)
  '(global-linum-mode t)
+ '(hscroll-step 2)
  '(inhibit-default-init t)
  '(inhibit-startup-screen t)
  '(line-spacing 2)

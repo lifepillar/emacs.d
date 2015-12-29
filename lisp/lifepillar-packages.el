@@ -13,6 +13,7 @@
     anti-zenburn-theme
     atom-dark-theme
     atom-one-dark-theme
+    avy
     solarized-theme
     zenburn-theme)
   "A list of packages that should be automatically installed if not present.")
@@ -52,6 +53,14 @@ Missing packages are installed automatically."
 ;; ace-window
 (require 'ace-window)
 (global-set-key (kbd "M-p") 'ace-window)
+
+;; Avy
+(avy-setup-default)
+(global-set-key (kbd "C-;") 'avy-goto-char)
+(global-set-key (kbd "C-'") 'avy-goto-char-2)
+(global-set-key (kbd "M-g g") 'avy-goto-line)
+(global-set-key (kbd "M-g w") 'avy-goto-word-1)
+(global-set-key (kbd "M-g e") 'avy-goto-word-0)
 
 (provide 'lifepillar-packages)
 

@@ -62,3 +62,8 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)
 
+;; Override theme in terminal
+(if (display-graphic-p)
+  (load-theme 'solarized-light t)
+  (load-theme 'zenburn t))
+

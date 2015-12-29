@@ -15,6 +15,7 @@
     atom-one-dark-theme
     avy
     solarized-theme
+    which-key
     zenburn-theme)
   "A list of packages that should be automatically installed if not present.")
 
@@ -61,6 +62,9 @@ Missing packages are installed automatically."
 (global-set-key (kbd "M-g g") 'avy-goto-line)
 (global-set-key (kbd "M-g w") 'avy-goto-word-1)
 (global-set-key (kbd "M-g e") 'avy-goto-word-0)
+
+(require 'which-key)
+(which-key-mode)
 
 (provide 'lifepillar-packages)
 

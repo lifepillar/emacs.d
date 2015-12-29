@@ -9,7 +9,8 @@
 
 ;; To install a new package, add it to this list and reload init.el.
 (defvar lifepillar/package-list
-  '(anti-zenburn-theme
+  '(ace-window
+    anti-zenburn-theme
     atom-dark-theme
     atom-one-dark-theme
     color-theme-solarized
@@ -47,6 +48,10 @@ Missing packages are installed automatically."
 
 ;; Run package installation
 (lifepillar/install-packages)
+
+;; ace-window
+(require 'ace-window)
+(global-set-key (kbd "M-p") 'ace-window)
 
 (provide 'lifepillar-packages)
 

@@ -2,6 +2,7 @@
 *.elc
 \#*
 .DS_Store
+bookmarks
 elpa/
 tmp/
 

@@ -11,6 +11,51 @@
  '(confirm-nonexistent-file-or-buffer nil)
  '(create-lockfiles nil)
  '(global-linum-mode t)
+ '(gnus-directory "~/.emacs.d/news")
+ '(gnus-large-newsgroup 5000)
+ '(gnus-message-archive-method
+   (quote
+    (nnfolder "archive"
+	      (nnfolder-inhibit-expiry t)
+	      (nnfolder-active-file ~/\.emacs\.d/news/sent/active)
+	      (nnfolder-directory ~/\.emacs\.d/news/sent/))))
+ '(gnus-novice-user nil)
+ '(gnus-read-newsrc-file nil)
+ '(gnus-save-newsrc-file nil)
+ '(gnus-secondary-select-methods
+   (quote
+    ((nntp "freenews.netfront.net"
+	   (nntp-port-number 119)))))
+ '(gnus-select-method
+   (quote
+    (nntp "news.gmane.org"
+	  (nntp-port-number 563)
+	  (nntp-open-connection-function nntp-open-ssl-stream))))
+ '(gnus-sum-thread-tree-false-root "▫ ")
+ '(gnus-sum-thread-tree-indent " ")
+ '(gnus-sum-thread-tree-leaf-with-other "├─▸ ")
+ '(gnus-sum-thread-tree-root "▪ ")
+ '(gnus-sum-thread-tree-single-indent "- ")
+ '(gnus-sum-thread-tree-single-leaf "╰─▸ ")
+ '(gnus-sum-thread-tree-vertical "│")
+ '(gnus-summary-dummy-line-format
+   "    %8{│%}                %8{│%}   %(%8{│%}                       %7{│%}%) %*%6{┊%}  %S\\n")
+ '(gnus-summary-line-format
+   "%8{%4k│%}%8{%16,16&user-date;│%}%9{%U%R%z%}%8{│%}%(%-23,23f%)%7{│%} %*%6{%B%} %S\\n")
+ '(gnus-suppress-duplicates t)
+ '(gnus-thread-indent-level 2)
+ '(gnus-thread-sort-functions
+   (quote
+    (gnus-thread-sort-by-number gnus-thread-sort-by-most-recent-number)))
+ '(gnus-user-date-format-alist
+   (quote
+    (((gnus-seconds-today)
+      . "Today, %H:%M")
+     ((+ 86400
+	 (gnus-seconds-today))
+      . "Yesterday, %H:%M")
+     (604800 . "%A %H:%M")
+     (t . "%d/%m/%Y %H:%M"))))
  '(hscroll-step 2)
  '(inhibit-default-init t)
  '(inhibit-startup-screen t)
